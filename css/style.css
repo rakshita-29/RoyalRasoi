@@ -1,0 +1,633 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+
+
+}
+
+body {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #538D22;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 92px;
+    z-index: -1;
+
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin: 1px 30px;
+    filter: invert(100%)
+}
+
+#logo img {
+    height: 80px;
+    margin: 2px 2px;
+}
+
+#logo h1 {
+    font-size: 34px;
+    font-family: 'Tangerine', cursive;
+}
+
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 240px; */
+}
+
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+
+
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 10px 18px;
+    margin: 1px 8px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: #1A4301;
+}
+
+.navright {
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    margin-top: 9px;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    align-items: center;
+    height: 367px;
+    margin-left: 50%;
+    margin-top: 45px;
+    border-bottom: 2px solid #143601;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/bgg.jpg') no-repeat center center/cover;
+    z-index: -2;
+    width: 50%;
+    height: 500px;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+#home p {
+    color: #143601;
+    text-align: center;
+    font-size: 1.35rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+/* menu section */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+#today {
+    margin: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opts {
+    display: flex;
+    align-items: center;
+
+}
+
+.opts ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+.opts ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.opts ul li a {
+    color: #538D22;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin: 8px;
+    padding: 8px 15px;
+
+}
+
+.opts ul li a:hover,
+.opts ul li a.active {
+    background-color: #143601;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.mbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 480px;
+    width: 250px;
+    margin-bottom: 70px;
+
+}
+
+.disc::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    border: 2px solid white;
+    z-index: -1;
+    padding-top: 100px;
+    width: 280px;
+    height: 234px;
+    box-shadow: 4px 4px 14px rgb(120, 119, 119);
+    border-radius: 20px;
+}
+
+.disc {
+    position: relative;
+    top: -100px;
+    padding-top: 100px;
+    width: 280px;
+    margin: 0px -17px;
+}
+
+.mbox p {
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #538D22;
+    padding: 2px 20px;
+
+
+
+}
+
+.menu img {
+    width: 200px;
+    border-radius: 50%;
+    border: 20px solid #89ca53;
+
+
+}
+
+.menu-container a {
+    margin: 10px 10px;
+    display: block;
+}
+
+.hr {
+    border: 1.5px solid #143601;
+    width: 82%;
+    margin: auto;
+
+}
+
+
+/*services section*/
+#services {
+    margin: 24px 34px;
+    display: flex;
+}
+
+#services .box {
+    padding: 34px;
+    margin: 5px 2px;
+
+}
+
+#box1,
+#box2 {
+    border-right: 2px solid #143601;
+}
+
+#services .box img {
+    height: 156px;
+    display: block;
+    margin: auto;
+
+}
+
+#services p {
+    font-family: sans-serif;
+    font-size: .8rem;
+    margin-bottom: 20px;
+    color: #143601;
+}
+
+/* offer section  */
+
+.offer {
+    background-color: #538D22;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 25px 0px;
+    margin: 15px 0px;
+
+}
+
+.offer h3 {
+    width: 75%;
+    color: white;
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+#off {
+    display: inline;
+    padding: 26px 5px;
+    font-size: 4rem;
+    background-color: white;
+    color: #538D22;
+    border-radius: 100%;
+    margin: 10px 15px;
+}
+
+/*clients-section*/
+#client-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border-top:2px solid #143601; */
+    margin: 0px 0px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+
+}
+
+#ourclient {
+    width: 100%;
+    height: 100%;
+    padding: 8px 0px;
+    margin: 0px;
+    color: #143601;
+    font-size: 4.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+
+}
+
+.clients {
+    width: 100%;
+    max-width: 950px;
+    background: #538D22;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 80px 0px;
+
+}
+
+.clients .main-card {
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+
+}
+
+#two:checked~.main-card {
+    margin-left: -100%;
+}
+
+.main-card .cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    width: calc(100% / 2 - 10px);
+}
+
+.main-card .cards .card {
+    background: white;
+    width: calc(100% / 3 - 10px);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 0px 10px;
+    transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover {
+    transform: translateY(-15px);
+}
+
+.cards .card .contentc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .card .contentc .img {
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #538D22;
+    border-radius: 50%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.card .contentc .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-sizing: border-box;
+
+}
+
+.card .contentc .details .name {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.card .contentc .details .review {
+    font-size: 20px;
+    color: #538D22;
+}
+
+.card .contentc .details .reviewp {
+    font-size: 14px;
+
+}
+
+.button {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    background: white;
+    margin: 0px 4px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+
+}
+
+.button label.active {
+    width: 35px;
+
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+#one:checked~.button label.one {
+    width: 35px;
+}
+
+#two:checked~.button label.two {
+    width: 35px;
+}
+
+#two:checked~.button label.one {
+    width: 15px;
+}
+
+#one:checked~.button label.two {
+    width: 15px;
+}
+
+
+#contact {
+    position: relative;
+}
+
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    color: #538D22;
+
+}
+
+#contact-box form {
+    width: 33%;
+
+}
+
+#contact-box label {
+    font-size: 1.25rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+
+.contact {
+    display: flex;
+    padding: 48px 32px 48px 68px;
+
+
+}
+
+.socialmedia {
+    width: 40%;
+    margin-right: 80px;
+
+}
+
+.socialmedia p {
+    margin: 18px 2px;
+    font-size: .9rem;
+    font-family: 'Dosis', sans-serif;
+
+
+}
+
+.medialogo {
+    width: 50px;
+    filter: brightness(0) invert(1);
+    margin: 2px 3px;
+}
+
+.medialogo:hover {
+    filter: none;
+}
+
+
+.contact h1 {
+    font-size: 34px;
+    font-family: 'Tangerine', cursive;
+}
+
+.links {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.links h2 {
+    margin-bottom: 22px;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 10px 6px;
+    color: white;
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: #538D22;
+    color: white;
+
+}
+
+.copyright {
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 8px 0px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/*utility class*/
+.h-primary {
+    font-size: 4.3rem;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #143601;
+
+
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #143601;
+
+}
+
+.h3 {
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #143601;
+
+}
+
+.price {
+    border: 2px solid #143601;
+    display: inline;
+    border-radius: 30px;
+    font-size: 1.35rem;
+    margin: 20px 20px 20px 20px;
+    padding: 6px 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #143601;
+}
+
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid #143601;
+    background-color: #143601;
+    color: white;
+    margin: 20px 20px 20px 20px;
+    font-size: 1.35rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #538D22;
+
+}
+
+.center {
+    text-align: center;
+}
